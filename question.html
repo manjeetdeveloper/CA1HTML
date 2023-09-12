@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz Time</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            text-shadow: 3px 0px 0px #ff5500;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .question {
+            border: 1px solid #000;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .question p {
+            color: rgb(6, 203, 6);
+        }
+
+        .submit{
+            
+            background-color: #28e813;
+            color: #5e84f7;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 80px;
+            align-items: center;
+   
+        }
+        
+        .submit:hover {
+            background-color: #fb880d;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Quiz Time</h1>
+    <form action="quiz_submission.php" method="POST">
+
+        <div class="question">
+
+            <p>Q.1 What is the capital of France?</p>
+
+            <input type="radio" id="paris" name="answer" value="paris">
+            <label for="paris">Paris</label><br>
+
+            <input type="radio" id="london" name="answer" value="london">
+            <label for="london">London</label><br>
+
+            <input type="radio" id="berlin" name="answer" value="berlin">
+            <label for="berlin">Berlin</label><br>
+
+            <input type="radio" id="rome" name="answer" value="rome">
+            <label for="rome">Rome</label><br><br>
+
+        </div>
+
+        <div class="question">
+            <p>Q.2 What does the abbreviation HTML stand for?</p>
+
+            <input type="radio" id="Markup" name="answer" value="Markup">
+            <label for="Markup">Hyper Text Markup Language</label><br>
+
+            <input type="radio" id="Hyper" name="answer" value="Hyper">
+            <label for="Hyper">Hyper Transfer Text Language</label><br>
+
+            <input type="radio" id="High" name="answer" value="High">
+            <label for="High">High Text Markup Language</label><br>
+
+            <input type="radio" id="rome" name="answer" value="rome">
+            <label for="rome">Hyperlink and Text Markup Language</label><br><br>
+        </div>
+
+        <div class="question">
+            <p>Q.3 Which HTML tag is used to create an ordered list?</p>
+
+            <input type="radio" id="ul" name="answer" value="ul">
+            <label for="ul">ul</label><br>
+
+            <input type="radio" id="li" name="answer" value="li">
+            <label for="li">li</label><br>
+
+            <input type="radio" id="ol" name="answer" value="ol">
+            <label for="ol">ol</label><br>
+
+            <input type="radio" id="dl" name="answer" value="dl">
+            <label for="dl">dl</label><br><br>
+        </div>
+
+        <div class="question">
+            <p>Q.4 In CSS, which property is used to control the size of text?</p>
+
+            <input type="radio" id="text" name="answer" value="text">
+            <label for="text">text-size</label><br>
+
+            <input type="radio" id="font" name="answer" value="font">
+            <label for="font">font-size</label><br>
+
+            <input type="radio" id="ext-style" name="answer" value="ext-style">
+            <label for="ext-style"> text-style</label><br>
+
+            <input type="radio" id="text-font" name="answer" value="text-font">
+            <label for="text-font"> text-font</label><br><br>
+        </div>
+        <div class="question">
+            <p>Q.5 What does CSS stand for?</p>
+
+            <input type="radio" id="Computer" name="answer" value="Computer">
+            <label for="Computer">Computer Style Sheet</label><br>
+
+            <input type="radio" id="Creative" name="answer" value="Creative">
+            <label for="Creative">Creative Style Sheet</label><br>
+
+            <input type="radio" id="Cascading" name="answer" value="Cascading">
+            <label for="Cascading">Cascading Style Sheet</label><br>
+
+            <input type="radio" id="Colorful" name="answer" value="Colorful">
+            <label for="Colorful">Colorful Style Sheet</label><br><br>
+
+        </div>
+
+        <div class="question">
+            <p>Q.6 In HTML, which tag is used to create a hyperlink?</p>
+
+            <input type="radio" id="link" name="answer" value="link">
+            <label for="link">link</label><br>
+
+            <input type="radio" id="a" name="answer" value="a">
+            <label for="a">a</label><br>
+
+            <input type="radio" id="href" name="answer" value="href">
+            <label for="href">href</label><br>
+
+            <input type="radio" id="hyperlink" name="answer" value="hyperlink">
+            <label for="hyperlink">hyperlink</label><br><br>
+        </div>
+
+        <div class="question">
+            <p>Q.7 What HTML tag is used to define an external script file?</p>
+
+            <input type="radio" id="script" name="answer" value="script">
+            <label for="script">script</label><br>
+
+            <input type="radio" id="js" name="answer" value="js">
+            <label for="js">js</label><br>
+
+            <input type="radio" id="scriptfile" name="answer" value="scriptfile">
+            <label for="scriptfile">scriptfile</label><br>
+
+            <input type="radio" id="external" name="answer" value="external">
+            <label for="external">external</label><br><br>
+        </div>
+
+        <div class="question">
+            <p>Q.8 In CSS what does the "C" stand for in "CSS"?</p>
+
+            <input type="radio" id="Computer" name="answer" value="Computer">
+            <label for="Computer">Computer</label><br>
+
+            <input type="radio" id="Cascading" name="answer" value="Cascading">
+            <label for="Cascading">Cascading</label><br>
+
+            <input type="radio" id="Creative" name="answer" value="Creative">
+            <label for="Creative"> Creative</label><br>
+
+            <input type="radio" id="Colorful" name="answer" value="Colorful">
+            <label for="Colorful">Colorful</label><br><br>
+        </div>
+
+        <div class="question">
+
+            <p>Q.9 What is the capital of India?</p>
+
+            <input type="radio" id="paris" name="answer" value="paris">
+            <label for="paris">Delhi</label><br>
+
+            <input type="radio" id="london" name="answer" value="london">
+            <label for="london">Patna</label><br>
+
+            <input type="radio" id="berlin" name="answer" value="berlin">
+            <label for="berlin">Phawara</label><br>
+
+            <input type="radio" id="Ludhiyana" name="answer" value="Ludhiyana">
+            <label for="Ludhiyana">Ludhiyana</label><br><br>
+        </div>
+
+
+        <div class="question">
+
+
+            <p>Q.10 Who Are You?</p>
+
+            <input type="radio" id="Student" name="answer" value="Student">
+            <label for="Student">Student</label><br>
+
+            <input type="radio" id="Teacher" name="answer" value="Teacher">
+            <label for="Teacher">Teacher</label><br>
+
+            <input type="radio" id="Professor" name="answer" value="Professor">
+            <label for="Professor">Professor</label><br>
+
+            <input type="radio" id="Facilty of LPU<" name="answer" value="Facilty of LPU<">
+            <label for="Facilty of LPU<">Facilty of LPU</label><br><br>
+        </div>
+
+        <div class="submit">
+            <input type="submit" value="submit">
+    </div>
+    </form>
+
+    </div>
+</body>
+
+</html>
