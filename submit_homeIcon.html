@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form with Two Rows</title>
+    <style>
+        /* Add basic CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        .row label {
+            margin-bottom: 5px;
+        }
+
+        .submit-button {
+            margin-top: 20px;
+            text-align: center; /* Center the button text */
+        }
+
+        /* Style the submit button */
+        .submit-button input[type="submit"] {
+            background-color: #3f84cf; /* Change to your desired button color */
+            color: #000000;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Add a smooth hover effect */
+        }
+
+        /* Hover effect for the submit button */
+        .submit-button input[type="submit"]:hover {
+            background-color: #0056b3; /* Change to your desired hover color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Leave A Recommendation</h1>
+        <form>
+            <!-- First Row (Optional First Name) -->
+            <div class="row">
+                <label for="firstName">First Name (Optional):</label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+
+            <!-- Second Row (Message) -->
+            <div class="row">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="15" cols="50" required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="submit-button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

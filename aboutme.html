@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+    <style>
+        /* Add some basic CSS styles for the about me section */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .about-me {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .about-me-text {
+            flex: 2;
+            padding: 30px;
+        }
+
+        .about-me-text h1 {
+            font-size: 36px;
+            margin-top: 0;
+        }
+
+        .about-me-image {
+            flex: 3;
+            text-align: right;
+        }
+
+        .animated-image {
+            max-width: 100%;
+            height: auto;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="about-me">
+    <div class="about-me-text">
+        <h1>Hi! I'm Manjeet Singh</h1>
+        <p>
+            Welcome to my personal website. I'm a passionate web developer who loves creating amazing web experiences.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lectus vel turpis fringilla condimentum.
+        </p>
+    </div>
+    <div class="about-me-image">
+        <img src="https://camo.githubusercontent.com/cae12fddd9d6982901d82580bdf321d81fb299141098ca1c2d4891870827bf17/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313336302f302a37513379765349765f7430696f4a2d5a2e676966" alt="Animated Pic" class="animated-image">
+    </div>
+</div>
+
+<!-- Add your additional content here -->
+
+</body>
+</html>
